@@ -9,8 +9,8 @@ public class Asignatura {
     }
 
     public void mostrarAlumnos() {
-        System.out.println("Nombre\tNota1\tNota2\tNota3\tMedia");
-        System.out.println("--------------------------------------");
+        System.out.println(Mensajes.ENCABEZADO_LISTA);
+        System.out.println(Mensajes.SEPARADOR);
         for (Alumno a : lista) {
             System.out.println(a.getNombre() + "\t" +
                 String.format("%.1f", a.getNota1()) + "\t" +

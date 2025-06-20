@@ -37,12 +37,12 @@ public class ListaAlumnos {
         asignatura.altaAlumno("Maria", 7.0, 8.0, 8.5);
         asignatura.altaAlumno("Sofia", 8.0, 9.0, 7.0);
 
-        System.out.print("\033[H\033[2J");
+        System.out.print(Mensajes.LIMPIAR_PANTALLA);
         System.out.flush();
-        System.out.println("\tLISTADO DE ALUMNOS");
-        System.out.println("--------------------------------------");
+        System.out.println(Mensajes.TITULO_LISTA);
+        System.out.println(Mensajes.SEPARADOR);
         asignatura.mostrarAlumnos();
-        System.out.println("--------------------------------------");
-        System.out.println("Nota media del grupo: " + asignatura.promedioGeneral());
+        System.out.println(Mensajes.SEPARADOR);
+        System.out.println(Mensajes.NOTA_MEDIA + asignatura.promedioGeneral());
     }
 }
