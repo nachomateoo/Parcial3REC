@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+/**
+ * Clase principal de la aplicación.
+ * Contiene el método main que ejecuta el programa.
+ */
 public class ListaAlumnos {
     public ArrayList<Alumno> alumnos = new ArrayList<>();
 
@@ -29,6 +33,10 @@ public class ListaAlumnos {
         return suma / alumnos.size();
     }
 
+    /**
+     * Método principal. Da de alta varios alumnos, muestra el listado y la nota media.
+     * @param args Argumentos de línea de comandos (no usados)
+     */
     public static void main(String[] args) {
         Asignatura asignatura = new Asignatura();
         asignatura.altaAlumno("Ana", 8.5, 7.0, 9.0);
