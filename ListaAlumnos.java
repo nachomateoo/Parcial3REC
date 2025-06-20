@@ -30,19 +30,19 @@ public class ListaAlumnos {
     }
 
     public static void main(String[] args) {
-        ListaAlumnos lista = new ListaAlumnos();
-        lista.agregarAlumno("Ana", 8.5, 7.0, 9.0);
-        lista.agregarAlumno("Luis", 6.0, 7.5, 8.0);
-        lista.agregarAlumno("Carlos", 9.0, 8.5, 7.5);
-        lista.agregarAlumno("Maria", 7.0, 8.0, 8.5);
-        lista.agregarAlumno("Sofia", 8.0, 9.0, 7.0);
-        
+        Asignatura asignatura = new Asignatura();
+        asignatura.altaAlumno("Ana", 8.5, 7.0, 9.0);
+        asignatura.altaAlumno("Luis", 6.0, 7.5, 8.0);
+        asignatura.altaAlumno("Carlos", 9.0, 8.5, 7.5);
+        asignatura.altaAlumno("Maria", 7.0, 8.0, 8.5);
+        asignatura.altaAlumno("Sofia", 8.0, 9.0, 7.0);
+
         System.out.print("\033[H\033[2J");
         System.out.flush();
         System.out.println("\tLISTADO DE ALUMNOS");
         System.out.println("--------------------------------------");
-        lista.mostrarAlumnos();
+        asignatura.mostrarAlumnos();
         System.out.println("--------------------------------------");
-        System.out.println("Nota media del grupo: " + lista.promedioGeneral());
+        System.out.println("Nota media del grupo: " + asignatura.promedioGeneral());
     }
 }
