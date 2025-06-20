@@ -13,10 +13,10 @@ public class ListaAlumnos {
         System.out.println("--------------------------------------");
         for (int i = 0; i < alumnos.size(); i++) {
             Alumno a = alumnos.get(i);
-            System.out.println(a.nombre + "\t" +
-                String.format("%.1f", a.nota1) + "\t" +
-                String.format("%.1f", a.nota2) + "\t" +
-                String.format("%.1f", a.nota3) + "\t" +
+            System.out.println(a.getNombre() + "\t" +
+                String.format("%.1f", a.getNota1()) + "\t" +
+                String.format("%.1f", a.getNota2()) + "\t" +
+                String.format("%.1f", a.getNota3()) + "\t" +
                 String.format("%.1f", a.promedio()));
         }
     }
